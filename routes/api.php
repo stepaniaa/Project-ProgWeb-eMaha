@@ -17,7 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/mahasiswa/read', 'MhsAPIController@read');
-Route::post('/mahasiswa/create', 'MhsAPIController@create');
-Route::post('/mahasiswa/update/{id}', 'MhsAPIController@update');
-Route::delete('/mahasiswa/delete/{id}', 'MhsAPIController@delete');
+Route::get('/task/read', 'TaskAPIController@read');
+Route::post('/task/create', 'TaskAPIController@create');
+Route::post('/task/update/{id}', 'TaskAPIController@update');
+Route::delete('/task/delete/{id}', 'TaskAPIController@delete');
